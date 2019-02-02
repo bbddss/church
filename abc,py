@@ -1,0 +1,8 @@
+from __future__ import unicode_literals
+from frappe.model.document import Document
+from frappe.contacts.address_and_contact import load_address_and_contact
+from frappe import msgprint
+
+class Member(Document):
+  def validate(self):
+    frappe.msgprint("hello this is py file")
